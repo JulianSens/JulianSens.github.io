@@ -1,0 +1,144 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	/*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.hdqwalls.com/wallpapers/looking-skyline-city-bit-art-4k-0p.jpg");*/
+	background-color: #eee;
+	color: black;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+body, html {
+	margin: 0;
+	height: 100%;
+}
+.navigationSection {
+	background-color: #1a1a1a;
+	color: white;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.navigationItem.active {
+	background-color: #2b2b2b;
+}
+.navigationItem {
+	padding: 20px 32px;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+}
+.navigationItem:hover {
+	background-color: #0066cc;
+}
+.contentCenterer {
+	width: 80%;
+	margin: auto;
+}
+.hero-image {
+  	height: 100vh;
+ 	position: relative;
+  	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.hdqwalls.com/wallpapers/looking-skyline-city-bit-art-4k-0p.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+.btn {
+	border: 0;
+	padding: 13px 143px;
+	margin: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 10px;
+}
+.contentSection {color: black;}
+.btn-classic {
+	background-color: #0066cc;
+	color: white;
+}
+*:focus {
+    outline: none;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.productSection {
+	width: 100%;
+	height: 95%;
+	/*background: rgba(0, 54, 122, 1);*/
+	color: black;
+	border: 0;
+	border-radius: 20px;
+}
+.text-centered {text-align: center;}
+.content-padder {padding: 25px;}
+.display-text {font-family: 'Open Sans', sans-serif; font-size: 40px;}
+
+.bg-lightgray {background-color: #333333; color: white;}
+.productListings {
+	text-align: center;
+}
+.product {
+	display: inline-block;
+	text-align: left;
+	margin: 10px 15px;
+	background-color: #2b2b2b;
+	color: white;
+	text-decoration: none;
+}
+.productImage {
+	width: 350px;
+	height: 300px;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	display: inline-block;
+}
+.productDescription {
+	padding: 10px;
+}
+.footerSection {
+	width: 100%;
+	background-color: #1a1a1a;
+	color: white;
+	margin-top: 100px;
+}
+.footerContent {
+	padding: 30px;
+}
+.productPageDescription {display: inline-block;}
+.inliner {display: inline-block;}
+.desContent {position: relative;}
+.productImgDis {
+	width: 100%;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	display: inline-block;
+  	height: 300px;
+}
+.input-select {
+	padding: 10px 64px;
+}
+.btn-order {
+	padding: 10px 64px;
+	border: 0;
+	background-color: #0066cc;
+}
+.ship-details input {
+	padding: 10px 64px;
+
+}
+.badge-info {
+	border: 0;
+	background-color: #eee;
+	color: black;
+	padding: 2px;
+	font-size: 80%;
+	border-radius: 4px;
+}

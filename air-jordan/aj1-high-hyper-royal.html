@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sneaker store</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../index.css">
+</head>
+<body>
+	
+	<!-- Navigation bar -->
+	<div class="navigationSection">
+		<div class="contentCenterer">
+			<a href="../" class="navigationItem">
+				Sneakers
+			</a>
+			<a href="../" class="navigationItem">
+				Homepage
+			</a>
+			<a href="../air-jordan" class="navigationItem active">
+				Air Jordan
+			</a>
+			<a href="../yeezy" class="navigationItem">
+				Adidas Yeezy 
+			</a>
+			<a href="../contact" class="navigationItem">
+				Need help?
+			</a>
+			<a href="../myaccount" style="float: right;" class="bg-lightgray navigationItem">
+				My account
+			</a>
+		</div>
+	</div>
+
+	<!-- Page content -->
+	<div class="contentSection">
+
+		<!-- Center the content -->
+		<div class="contentCenterer">
+
+			<div class="navigationItem" style="visibility: hidden;">Test</div><br>
+			<div class="navigationItem" style="visibility: hidden;">Test</div><br>
+
+			<div class="productDisplay">
+
+				<div class="productImgDis" style="background-image: url('https://www.sneakersquad.nl/typo3temp/_processed_/5/a/csm_Air_Jordan_1_High_Hyper_Royal_foto_1_ceee24ecb1.jpg')"></div>
+
+				<div class="productPageDescription">
+					<div class="desContent">
+						<br>
+						<table style="width: 100%;">
+							<tr style="width: 100%;">
+								<td style="width: 50%;">
+									<b id="productname" style="font-size: 300%;">Hyper Royal</b><br>
+									<span id="productmodel">Air Jordan 1 Retro OG High</span><br>
+									<br>
+									<span style="font-size: 160%;">&euro;289,99</span><br>
+									<br>
+									<form action="../order.php" method="POST">
+										<input type="hidden" name="product" id="product">
+										<select class="input-select" name="size" id="size-swatch">
+										<option value="40">EU40 &bullet; US7</option>
+											<option value="40.5">EU40.5 &bullet; US7.5</option>
+											<option value="41">EU41 &bullet; US8</option>
+											<option value="42">EU42 &bullet; US8.5</option>
+											<option value="42.5">EU42.5 &bullet; US9</option>
+											<option value="43">EU43 &bullet; US9.5</option>
+											<option value="44">EU44 &bullet; US10</option>
+											<option value="44">EU44.5 &bullet; US10.5</option>
+										</select>
+
+										<br><br>
+
+										<button type="submit" class="btn-order">Submit order</button>
+									</form>
+									<script>
+										// Declare product in form
+										var name = document.querySelector("#productname").innerHTML;
+										var model = document.querySelector("#productmodel").innerHTML;
+										document.querySelector("#product").value = `${model} # ${name}`;
+									</script>
+								</td>
+								<!--
+								<td class="ship-details">
+									<input name="firstname" placeholder="First name" type="text" required><br>
+									<input name="lastname" placeholder="Last name" type="text" required><br>
+									<input name="address" placeholder="Address" type="text" required><br>
+									<input name="zipcode" placeholder="Postal code" type="text" required><br>
+									<input name="country" placeholder="Country" type="text" required><br>
+								</td>
+								-->
+							</tr>
+						</table>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Footer -->
+	<div class="footerSection">
+		<div class="contentCenterer">
+			<div class="footerContent">
+				Thank you for shopping here
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lounar Sneakers</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../index.css">
+</head>
+<body>
+	
+	<!-- Navigation bar -->
+	<div class="navigationSection">
+		<div class="contentCenterer">
+			<a href="../" class="navigationItem">
+				Sneakers
+			</a>
+			<a href="../" class="navigationItem">
+				Homepage
+			</a>
+			<a href="../air-jordan" class="navigationItem">
+				Air Jordan
+			</a>
+			<a href="../yeezy" class="navigationItem active">
+				Adidas Yeezy 
+			</a>
+			<a href="../contact" class="navigationItem">
+				Need help?
+			</a>
+			<a href="../myaccount" style="float: right;" class="bg-lightgray navigationItem">
+				My account
+			</a>
+		</div>
+	</div>
+
+	<!-- Page content -->
+	<div class="contentSection">
+
+		<!-- Center the content -->
+		<div class="contentCenterer">
+
+			<div class="navigationItem" style="visibility: hidden;">Test</div><br>
+			<div class="navigationItem" style="visibility: hidden;">Test</div><br>
+
+			<div class="productDisplay">
+
+				<div class="productImgDis" style="background-image: url('https://sneakernews.com/wp-content/uploads/2021/02/adidas-yeezy-boost-350-v2-ash-stone-GW0089-official-images-1.jpg?w=1140')"></div>
+
+				<div class="productPageDescription">
+					<div class="desContent">
+						<br>
+						<table style="width: 100%;">
+							<tr style="width: 100%;">
+								<td style="width: 50%;">
+									<b id="productname" style="font-size: 300%;">Ash Stone</b><br>
+									<span id="productmodel">Yeezy Boost 350 V2</span><br>
+									<br>
+									<span style="font-size: 160%;">&euro;319,99</span><br>
+									<br>
+									<form action="../order.php" method="POST">
+										<input type="hidden" name="product" id="product">
+										<select class="input-select" name="size" id="size-swatch">
+										<option value="40">EU40 &bullet; US7</option>
+											<option value="40.5">EU40.5 &bullet; US7.5</option>
+											<option value="41">EU41 &bullet; US8</option>
+											<option value="42">EU42 &bullet; US8.5</option>
+											<option value="42.5">EU42.5 &bullet; US9</option>
+											<option value="43">EU43 &bullet; US9.5</option>
+											<option value="44">EU44 &bullet; US10</option>
+											<option value="44">EU44.5 &bullet; US10.5</option>
+										</select>
+
+										<br><br>
+
+										<button type="submit" class="btn-order">Submit order</button>
+									</form>
+									<script>
+										// Declare product in form
+										var name = document.querySelector("#productname").innerHTML;
+										var model = document.querySelector("#productmodel").innerHTML;
+										document.querySelector("#product").value = `${model} # ${name}`;
+									</script>
+								</td>
+								<!--
+								<td class="ship-details">
+									<input name="firstname" placeholder="First name" type="text" required><br>
+									<input name="lastname" placeholder="Last name" type="text" required><br>
+									<input name="address" placeholder="Address" type="text" required><br>
+									<input name="zipcode" placeholder="Postal code" type="text" required><br>
+									<input name="country" placeholder="Country" type="text" required><br>
+								</td>
+								-->
+							</tr>
+						</table>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Footer -->
+	<div class="footerSection">
+		<div class="contentCenterer">
+			<div class="footerContent">
+				Thank you for shopping here
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
